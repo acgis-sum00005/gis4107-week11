@@ -3,6 +3,7 @@ class Circle:
     def __init__(self):
         self.radius = 0
 
+
     @property
     def circle_radius(self):
         return self.radius
