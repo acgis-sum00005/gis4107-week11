@@ -1,7 +1,7 @@
 import math
 class Circle:
-    def __init__(self):
-        self.radius = 0
+    def __init__(self, radius):
+        self.radius = radius
 
     @property
     def circle_radius(self):
@@ -17,8 +17,8 @@ class Circle:
 
 
 class Square:
-    def __init__(self):
-        self.side = 0
+    def __init__(self, side):
+        self.side = side
     
     @property
     def square_side(self):
@@ -33,9 +33,9 @@ class Square:
         return f'Square area with a side of {self.square_side} is {self.square_area}'
 
 class Rectangle:
-    def __init__(self):
-        self.width = 0
-        self.height = 0
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
 
     @property
     def rectangle_width(self):
