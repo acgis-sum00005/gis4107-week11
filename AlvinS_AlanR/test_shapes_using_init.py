@@ -1,12 +1,11 @@
-import shapes as shapes
+import shapes_using_init as shapes
 import pytest
 import math
 
 def test_area_of_circle():
     
     expected = round(4 * math.pi, 3)
-    circle = shapes.Circle()
-    circle.radius = 2
+    circle = shapes.Circle(2)
     actual = circle.circle_area 
     assert expected == actual
 
@@ -18,8 +17,7 @@ def test_area_of_circle():
 def test_area_of_square():
 
     expected = 9
-    square = shapes.Square()
-    square.side = 3
+    square = shapes.Square(3)
     actual = square.square_area
     assert expected == actual
 
@@ -30,9 +28,7 @@ def test_area_of_square():
 def test_area_of_rectangle():
 
     expected = 8
-    rectangle = shapes.Rectangle()
-    rectangle.width = 4
-    rectangle.height = 2
+    rectangle = shapes.Rectangle(4, 2)
     actual = rectangle.rectangle_area
     assert expected == actual
 
